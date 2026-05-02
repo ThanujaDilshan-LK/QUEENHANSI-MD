@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THANUJA DILSHAN BOT</title>
+    <style>
+        /* Mulu pituvema design eka */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #00d4ff;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        button {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 250px;
+            text-transform: uppercase;
+        }
+
+        .btn-main {
+            background-color: #00d4ff;
+            color: #000;
+        }
+
+        .btn-main:hover {
+            background-color: #008fb3;
+            transform: scale(1.05);
+        }
+
+        /* Sub buttons (Pair/QR) hangala thiyanna */
+        #session-options {
+            display: none;
+            margin-top: 20px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn-sub {
+            background-color: #333;
+            color: #fff;
+            border: 2px solid #00d4ff;
+        }
+
+        .btn-sub:hover {
+            background-color: #00d4ff;
+            color: #000;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>THANUJA DILSHAN</h1>
+
+        <div class="btn-group">
+            <a href="https://your-deploy-link.com" target="_blank">
+                <button class="btn-main">DEPLOY</button>
+            </a>
+
+            <button class="btn-main" onclick="showOptions()">SESSION</button>
+
+            <div id="session-options">
+                <a href="https://your-pair-code-link.com">
+                    <button class="btn-sub">PAIR CODE</button>
+                </a>
+                <a href="https://your-qr-code-link.com">
+                    <button class="btn-sub">QR CODE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showOptions() {
+            var options = document.getElementById("session-options");
+            if (options.style.display === "flex") {
+                options.style.display = "none";
+            } else {
+                options.style.display = "flex";
+            }
+        }
+    </script>
+
+</body>
+</html>
