@@ -1,29 +1,45 @@
 {
-  "name": "Queen_Ahinsa-MD",
-  "description": "ᴊᴀᴠᴀsᴄʀɪᴘᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ Queen_Ahinsa-MD",
-  "logo": "https://i.ibb.co/SR76mBh/Pu3-ZYHBS5139.jpg",
-  "keywords": ["bot"],
-  "success_url": "/",
-
-    "stack": "container",
+  "name": "QUEENHANSI-MD",
+  "description": "A Simple WhatsApp Bot created using Node.js and Baileys.",
+  "repository": "https://github.com/ThanujaDilshan-LK/QUEENHANSI-MD",
+  "logo": "https://i.ibb.co/3s22sM1/bot-logo.jpg",
+  "keywords": ["whatsapp", "bot", "nodejs", "baileys", "QUEENHANSI"],
   "env": {
     "SESSION_ID": {
-      "description": "Put the session-id here.",
-      "required": true,
-      "value": ""
-    },  
-    
+      "description": "ඔයාගේ Session ID එක මෙතනට දෙන්න.",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "අයිතිකරුවාගේ නම දෙන්න.",
+      "required": false,
+      "value": "Thanuja"
+    },
+    "BOT_NAME": {
+      "description": "බොට්ගේ නම දෙන්න.",
+      "required": false,
+      "value": "QUEENHANSI-MD"
+    },
     "MONGODB": {
-      "description": "you can use this public mongodb url if you have your personal key So you can use him.",
-      "required": true,
-      "value": "mongodb+srv://suhail:suhail@clustere.tuhzpez.mongodb.net/?retryWrites=true&w=majority"
+      "description": "Database ලින්ක් එක මෙතනට දෙන්න (වෙනස් නොකර තිබීමට හැක).",
+      "required": false,
+      "value": "mongodb://mongo:MgRxoQTXWnKFtprOrocHAeucSEKWBtoE@junction.proxy.rlwy.net:45585"
     }
-},
-
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
-  "stack": "heroku-24"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/cloverhearts/heroku-buildpack-imagemagick"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  }
 }
