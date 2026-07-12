@@ -1,12 +1,12 @@
 {
-  "name": "Queen_Ahinsa-MD",
+  "name": "QUEENHANSI-MD",
   "version": "1.0.0",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Queen_Ahinsa-MD",
-    "stop": "pm2 stop Queen_Ahinsa-MD",
-    "restart": "pm2 restart Queen_Ahinsa-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name QUEENHANSI -MD",
+    "stop": "pm2 stop QUEENHANSI -MD",
+    "restart": "pm2 restart QUEENHANSI-MD"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.7.8",
