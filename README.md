@@ -73,3 +73,11 @@ npm install
 
 # 4. Bot එක Run කරන්න
 npm start
+
+👤 Developer
+​Thanuja Dilshan - GitHub: ThanujaDilshan-LK
+​<p align="center">
+<i>Made with ❤️ in Sri Lanka</i>
+
+<b>© 2026 QUEENHANSI-MD. All Rights Reserved.</b>
+</p>
