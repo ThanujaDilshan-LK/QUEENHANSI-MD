@@ -2,9 +2,8 @@ QUEENHANSI-MD
 <h1 align="center">QUEENHANSI-MD 👑</h1>
 
 <p align="center">
-  <img src="https://telegra.ph/file/0c9e6bb0783457a3e74ec.jpg" alt="QUEENHANSI-MD Logo" width="350" style="border-radius: 15px;">
-</p>
-
+  <img src="https://graph.org/file/7d0f7b56a97eceb2f1e88-a16c9156de6157ee82.jpg" alt="QUEENHANSI-MD Logo" width="350" style="border-radius: 15px;">
+</
 <p align="center">
   <b>ඔබගේ WhatsApp අත්දැකීම නව මට්ටමකට ගෙන යන අතිවිශිෂ්ට WhatsApp Bot එකක්. 🚀</b>
 </p>
