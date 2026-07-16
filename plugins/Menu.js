@@ -4,6 +4,9 @@ const os = require("os")
 const {runtime} = require('../lib/functions')
 const axios = require('axios')
 
+<p align="center">
+  < img src "https://graph.org/file/7d0f7b56a97eceb2f1e88-a16c9156de6157ee82.jpg" alt="QUEENHANSI-MD Logo" width="350" style="border-radius: 15px;">
+</p>
 
 cmd({
 
